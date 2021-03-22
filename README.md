@@ -1,4 +1,4 @@
-# ContinuousDQN
+# Continuous DQN
 Autonomous Driving Policy through Deep Q-Networks
 
 ## Summary
