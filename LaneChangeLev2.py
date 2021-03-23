@@ -107,32 +107,32 @@ def read_integers(filename):
         return map(int, f)
 
 if training:
-    num_state_resets = 150
+    num_state_resets = 50
     maxcars = 125
     num_episodes = 100
     runtime = 100
-    avg_reward = -9.697419350513226
+    avg_reward = 0
     finpoint = 0
     pol = 0
     state_size = 19
     action_size = 7
     target_up = 20
     agentlev1 = DQNAgent.DQNAgent(state_size, action_size)
-    agentlev1.load("datanew/level1/weight43.h5")
+    agentlev1.load("datanew/level1/weight49.h5")
     agentlev1.T = 1
     agent = DQNAgent.DQNAgent(state_size, action_size)
-    #agent.load("datanew/weight74.h5")
+    #agent.load("datanew/weight49.h5")
     #agent.T = 1
     done = False
     batch_size = 50
 
 
-    for i in range (75, num_state_resets):
+    for i in range (num_state_resets):
         numcars = 125
-        # if i >= 12.5:
-        #     numcars = 100
-        # if i >= 37.5:
-        #     numcars = 125
+        if i >= 12.5:
+            numcars = 100
+        if i >= 37.5:
+            numcars = 125
 
         if i == (num_state_resets-1):
             finpoint = 1
