@@ -243,7 +243,7 @@ if training:
 
         state = None
         if agent.T > 1:
-            agent.T = agent.T*0.968
+            agent.T = agent.T*0.925
             #agent.T = agent.T*0.984474
         fname = './datanew/weight'+str(i)+'.h5'
         agent.save(fname)
