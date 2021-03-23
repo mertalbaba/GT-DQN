@@ -20,12 +20,25 @@ Run the python file LaneChangeLev1.py from the terminal/command window with a sc
 python LaneChangeLev1.py
 ```
 
-At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight50.h5', to the folder 'datanew/level1/'. Else, continue training by uncommenting 136th and 137th lines. 
+At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight49.h5', to the folder 'datanew/level1/'. Else, continue training by uncommenting 136th and 137th lines. 
 
 ### 3.2. Training Level 2
+Run the python file LaneChangeLev1.py from the terminal/command window with a script given below or from a python IDE. 
 
+```
+python LaneChangeLev2.py
+```
+
+At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight49.h5', to the folder 'datanew/level2/'. Else, continue training by uncommenting 136th and 137th lines. 
 
 ### 3.3. Training Level 3
+Run the python file LaneChangeLev1.py from the terminal/command window with a script given below or from a python IDE. 
+
+```
+python LaneChangeLev3.py
+```
+
+At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight49.h5', to the folder 'datanew/level3/'. Else, continue training by uncommenting 136th and 137th lines. 
 
 ## Results
 ### 4.1. Generating Results
