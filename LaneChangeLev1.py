@@ -119,9 +119,9 @@ def read_integers(filename):
         return map(int, f)
 
 if training:
-    num_state_resets = 75
+    num_state_resets = 50
     maxcars = 125
-    num_episodes = 50
+    num_episodes = 100
     runtime = 100
     avg_reward = 0
     finpoint = 0
