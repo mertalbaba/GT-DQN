@@ -133,7 +133,7 @@ if training:
     # agentlev1.load("data/level1/weight325.h5")
     # agentlev1.T = 1
     agent = DQNAgent.DQNAgent(state_size, action_size)
-    #agent.load('data/level1new/weight74.h5')
+    #agent.load('datanew/weight50.h5')
     #agent.T = 1
     done = False
     batch_size = 50
