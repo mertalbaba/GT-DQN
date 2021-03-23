@@ -14,6 +14,13 @@ These must be installed before next steps.
 
 ## Training
 ### 3.1. Training Level 1
+Run the python file LaneChangeLev1.py from the terminal/command window as
+```
+python LaneChangeLev1.py
+```
+or from the IDE. 
+
+At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight50.h5', to the folder 'datanew/level1/'. Else, continue training by uncommenting 136th and 137th lines. 
 
 ### 3.2. Training Level 2
 
