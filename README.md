@@ -14,28 +14,28 @@ These must be installed before next steps.
 
 ## Training
 ### 3.1. Training Level 1
-Run the python file LaneChangeLev1.py from the terminal/command window with a script given below or from a python IDE. 
+Run the python file TrainLevel1.py from the terminal/command window with a script given below or from a python IDE. 
 
 ```
-python LaneChangeLev1.py
+python TrainLevel1.py
 ```
 
 At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight49.h5', to the folder 'datanew/level1/'. Else, continue training by uncommenting 136th and 137th lines. 
 
 ### 3.2. Training Level 2
-Run the python file LaneChangeLev1.py from the terminal/command window with a script given below or from a python IDE. 
+Run the python file TrainLevel2.py from the terminal/command window with a script given below or from a python IDE. 
 
 ```
-python LaneChangeLev2.py
+python TrainLevel2.py
 ```
 
 At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight49.h5', to the folder 'datanew/level2/'. Else, continue training by uncommenting 136th and 137th lines. 
 
 ### 3.3. Training Level 3
-Run the python file LaneChangeLev1.py from the terminal/command window with a script given below or from a python IDE. 
+Run the python file TrainLevel3.py from the terminal/command window with a script given below or from a python IDE. 
 
 ```
-python LaneChangeLev3.py
+python TrainLevel3.py
 ```
 
 At the end of the training, i.e. after 5000 episodes, analyze the reward and collusion statistics by inspecting 'datanew/reward.dat' and 'datanew/collusion.dat'. If the reward is converged and no collusion is occured in recent episodes, move the final weight, i.e. 'datanew/weight49.h5', to the folder 'datanew/level3/'. Else, continue training by uncommenting 136th and 137th lines. 
