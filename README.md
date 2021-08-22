@@ -47,11 +47,3 @@ At the end of the training, i.e. after 5000 episodes, analyze the reward and col
 
 ### 4.3. I80 Dataset
 
-## Additional
-### Brief Description of Each File
-#### Action.py
-Includes all possible actions, in other words, defines the action space.
-
-#### Car.py
-Implements the functions that update car positions. 
-
