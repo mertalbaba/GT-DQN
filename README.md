@@ -42,8 +42,9 @@ At the end of the training, i.e. after 5000 episodes, analyze the reward and col
 
 ## Results
 ### 4.1. Generating Results
+After obtaining the driving policies, i.e., level-1, level-2, ..., on the ksComparisonRandom100.py file, change lines 88-90 properly by setting the locations of the trained policy weights as the paths. Then, in order to compare 
 
-### 4.2. US101 Dataset                                                                                                                                                                                                                                                                                                         |
+### 4.2. US101 Dataset                                                                                                                                           
 
 ### 4.3. I80 Dataset
 
