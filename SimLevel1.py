@@ -1,4 +1,4 @@
-import Policy, Car, Params, Action, Message, DQNAgent, State, DRQNAgent
+import Car, Params, Action, Message, DQNAgent, State, DRQNAgent
 import numpy as np
 from numpy import array
 import math
