@@ -1,8 +1,8 @@
-# Continuous DQN
-Autonomous Driving Policy through Deep Q-Networks
+# GT-DQN
+Synergistic combination of hieararchical game theory and deep reinforcement learning.
 
 ## Summary
-Combination of DQN and level-k reasoning is proposed in this work to model human driver behaviors through driving policies.oposals.
+Combination of DQN and level-k reasoning is proposed in this work to model human driver behaviors through driving policies proposals.
 
 ## Dependencies
 
@@ -42,9 +42,33 @@ At the end of the training, i.e. after 5000 episodes, analyze the reward and col
 
 ## Results
 ### 4.1. Generating Results
-After obtaining the driving policies, i.e., level-1, level-2, ..., on the ksComparisonRandom100.py file, change lines 88-90 properly by setting the locations of the trained policy weights as the paths. Then, in order to compare 
+In order to understand the performance of the generated policies in terms of modeling human driver behaviors, these policies are compared with real data. For the comparisons, Kolmogorov Goodness-of-Fit Test for Discontinuous Distributions is used.
 
-### 4.2. US101 Dataset                                                                                                                                           
+### 4.2. US101 Dataset 
+After obtaining the driving policies, i.e., level-1, level-2, ..., on the ksComparisonRandom100.py file, change lines 88-90 properly by setting the locations of the trained policy weights as the paths. Then, in order to compare the US101 Real Data with the proposed policies, run the python file ksComparisonRandom100.py on the terminal/command windows with the script given below. 
+
+```
+python ksComparisonRandom100.py
+```
 
 ### 4.3. I80 Dataset
+After obtaining the driving policies, i.e., level-1, level-2, ..., on the ksComparisonRandom100_i80.py file, change lines 88-90 properly by setting the locations of the trained policy weights as the paths. Then, in order to compare the US101 Real Data with the proposed policies, run the python file ksComparisonRandom100_i80.py on the terminal/command windows with the script given below. 
+
+```
+python ksComparisonRandom100_i80.py
+```
+
+## Appendix
+### Action.py
+All possible actions, i.e., actions in the action space, are defined in this file.
+
+### Car.py
+Vehicle class is implemented in this file. Position and velocity update functions are defined. 
+
+### DQNAgent.py
+A model of the utilized RL approach, DQN, is defined in this file. Experience replay, target network, action prediction are implemented through functions.
+
+
+
+
 
