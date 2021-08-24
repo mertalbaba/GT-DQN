@@ -1,4 +1,4 @@
-import Params, Action, Policy
+import Params, Action
 import random
 
 class Car:
